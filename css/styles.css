@@ -96,6 +96,7 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .span-logo {
     color: #404bbf;
     position: relative;
@@ -103,27 +104,31 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .span-logo2 {
-    color:#2E2F42;
+    color: #2E2F42;
     position: relative;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media (max-width:320px) {
-    .span-logo{
+    .span-logo {
         width: 115px;
         height: 24px;
         top: 16px;
-        left: 16px;   
+        left: 16px;
     }
-    .span-logo2{
+
+    .span-logo2 {
         width: 115px;
         height: 24px;
         top: 16px;
-        left: 16px;   
+        left: 16px;
     }
-    }
+}
+
 .header-list {
     display: flex;
     gap: 40px;
@@ -208,7 +213,18 @@ body {
 .address-link:focus {
     color: #404bbf;
 }
-
+.header-menu{
+    visibility: hidden;
+}
+@media (max-width:320px){
+.header-menu {
+    visibility: visible;
+    width: 24px;
+    height: 24px;
+    margin-left: 68px;
+    margin-top: 12px;
+}
+}
 /* Prima sectiune */
 
 .first-section {
@@ -1023,7 +1039,7 @@ body {
 .modal-container {
     position: absolute;
     top: 3%;
-    left: 50%; 
+    left: 50%;
     width: 408px;
     height: 584px;
     min-height: 584px;
@@ -1033,12 +1049,13 @@ body {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
 }
+
 @media (max-width:320px) {
     .modal-container {
         position: absolute;
         width: 288px;
         height: 623px;
-        top:2%;
+        top: 2%;
         left: 2%;
     }
 }
