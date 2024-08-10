@@ -170,6 +170,13 @@ body {
     padding: 188px 0;
 }
 
+@media (max-width:320px) {
+    .first-section {
+        width: 320px;
+        height: 432px;
+    }
+}
+
 .first-section-title {
     font-size: 56px;
     line-height: 1.07;
@@ -178,7 +185,17 @@ body {
     color: #ffffff;
     max-width: 496px;
 }
-
+@media (max-width:320px) {
+    .first-section-title{
+        width: 216px;
+height: 160px;
+margin-left: 52px ;
+font-size: 36px;
+font-weight: 700;
+line-height: 40px;
+text-align: center;
+    }
+}
 .button-order {
     background-color: #4d5ae5;
     color: #ffffff;
@@ -194,7 +211,14 @@ body {
     transition:
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media (max-width:320px) {
+    .button-order{
+        margin-left: 75px;
+        padding: 16px 32px 16px 32px;
+        gap: 10px;
+        border-radius: 4px 0px 0px 0px;
+    }
+    }
 .button-order:hover {
     background-color: #404bbf;
 }
