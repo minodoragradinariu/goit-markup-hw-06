@@ -103,8 +103,21 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.span-logo2 {
+    color:#2E2F42;
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media (max-width:320px) {
     .span-logo{
+        width: 115px;
+        height: 24px;
+        top: 16px;
+        left: 16px;   
+    }
+    .span-logo2{
         width: 115px;
         height: 24px;
         top: 16px;
