@@ -747,7 +747,6 @@ body {
     .social-media {
         width: 208px;
         height: 80px;
-        margin-left: 56px;
         margin-bottom: 72px;
     }
 }
@@ -765,15 +764,26 @@ body {
     .footer-social {
         width: 96px;
         height: 24px;
-        left: 112px;
         line-height: 24px;
         text-align: left;
+        margin-bottom: 16px;
+        margin-left: 112px;
     }
 }
 
 .footer-list {
     display: flex;
     gap: 16px;
+}
+
+@media (max-width:320px) {
+    .footer-list {
+        width: 208px;
+        height: 40px;
+        margin-top: 16px;
+        gap: 16px;
+        margin-left: 56px;
+    }
 }
 
 .footer-list-item {
@@ -810,6 +820,17 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width:320px) {
+    .footer-container-form {
+        display: inline-block;
+        width: 288px;
+        height: 136px;
+        margin-left: 16px;
+        border-radius: 4px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+    }
+}
+
 .footer-subscribe {
     font-weight: 500;
     font-size: 16px;
@@ -819,9 +840,25 @@ body {
     margin-bottom: 16px;
 }
 
+@media (max-width:320px) {
+    .footer-subscribe {
+        width: 75px;
+        height: 24px;
+        margin-left: 122px;
+        line-height: 24px;
+        text-align: left;
+    }
+}
+
 .footer-form {
     display: flex;
     gap: 24px;
+}
+
+@media (max-width:320px) {
+    .footer-form {
+        display: inline-block;
+    }
 }
 
 .form-email {
@@ -836,6 +873,24 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+}
+
+@media (max-width:320px) {
+    .form-email {
+        width: 288px;
+        height: 40px;
+        margin-bottom: 16px;
+        border-radius: 4px 0px 0px 0px;
+    }
+}
+
+@media (max-width:320px) {
+    .label-footer-form {
+        width: 36px;
+        height: 24px;
+        left: 32px;
+        opacity: 0.6px;
+    }
 }
 
 .form-email.placeholder {
@@ -858,6 +913,15 @@ body {
     background-color: #4d5ae5;
     border: none;
     border-radius: 4px;
+}
+
+@media (max-width:320px) {
+    .button-subscribe {
+        margin-top: 16px;
+        margin-left: 77px;
+        padding: 8px 24px 8px 24px;
+        gap: 16px;
+    }
 }
 
 .svg-item {
