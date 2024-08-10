@@ -199,21 +199,49 @@ body {
 .button-order:focus {
     background-color: #404bbf;
 }
+/* Sectiunea 2 */
 
 .second-section {
     padding: 120px 0;
 }
-
+@media (max-width:320px){
+    .second-section {
+        padding: 0;
+    }
+}
 .second-list {
     display: flex;
     gap: 24px;
 }
-
+@media (max-width:320px){
+    .second-list{
+        display: block;
+        width: 288px;
+height: 696px;
+    }
+}
 .second-list-item {
     width: calc((100% - 72px) / 4);
     ;
 }
-
+@media (max-width:320px){
+    .second-list-item{
+        width: 288px;
+height: 120px;
+gap: 8px;
+        margin-bottom: 72px;
+    }
+}
+@media (max-width:320px){
+    .second-list-item:first-of-type{
+        margin-top: 96px;
+    }
+}
+@media (max-width:320px){
+    .second-list-item:last-of-type{
+        padding-bottom: 96px;
+    }
+}
 .second-section-title {
     margin-bottom: 8px;
     font-weight: 500;
