@@ -223,6 +223,11 @@ body {
     color: #2e2f42;
     visibility: hidden;
 }
+@media (max-width:320px){
+    .second-section-title{
+        visibility: visible;
+    }
+}
 
 .visually-hidden {
     position: absolute;
@@ -256,7 +261,11 @@ body {
     border-radius: 4px;
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
-
+}
+@media (max-width:320px){
+    .container-iconite{
+        display: none;
+    }
 }
 
 .third-section {
