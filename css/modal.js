@@ -10,5 +10,5 @@ modal.addEventListener("click", (e) => {
   toggleModalheader();
 });
 function toggleModalheader() {
-  modal.classList.toggle("is-open");
+  modal.classList.toggle(" is-open");
 }
