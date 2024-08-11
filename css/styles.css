@@ -117,14 +117,12 @@ body {
     .span-logo {
         width: 115px;
         height: 24px;
-        top: 16px;
         left: 16px;
     }
 
     .span-logo2 {
         width: 115px;
         height: 24px;
-        top: 16px;
         left: 16px;
     }
 }
@@ -311,7 +309,28 @@ body {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.header-social-list{
+    display: flex;
+    gap: 16px;
+    width: 208px;
+    height: 40px;
+    margin-top: 48px;
+    margin-left: 16px;
+}
+.header-list-item {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-svg{
+    fill: #f4f4fd;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Prima sectiune */
 
