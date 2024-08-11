@@ -683,10 +683,6 @@ body {
     }
 }
 
-@media (min-width:321px) and (max-width:768px) {
-    .second-section-title {}
-}
-
 .container-iconite {
     display: flex;
     align-items: center;
@@ -928,18 +924,6 @@ body {
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
-}
-
-@media (max-width:320px) {
-    .fourth-section-title {
-        /* width: 218px;
-        height: 40px;
-        font-weight: 700;
-        line-height: 40px;
-        text-align: center;
-        margin-left: 51px;
-        margin-right: 51px; */
-    }
 }
 
 .fourth-section-list {
