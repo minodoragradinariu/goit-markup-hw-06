@@ -151,6 +151,15 @@ body {
     .header-item {
         margin-bottom: 40px;
     }
+
+    .header-item:hover {
+        color: #404bbf;
+    }
+
+    .header-item:focus {
+        color: #404bbf;
+    }
+
 }
 
 .header-link {
@@ -176,39 +185,34 @@ body {
         line-height: 40px;
         text-align: left;
     }
+
+    .header-link:hover {
+        color: #404bbf;
+    }
+
+    .header-link:focus {
+        color: #404bbf;
+    }
 }
 
-.header-link::after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
+.modal-header.is-open {
+    .header-link::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+    }
 }
 
 .modal-header.is-open {
     .header-link::after {
         display: none;
     }
-}
 
-.header-link:hover {
-    color: #404bbf;
-}
-
-.header-link:focus {
-    color: #404bbf;
-}
-
-.header-item:hover {
-    color: #404bbf;
-}
-
-.header-item:focus {
-    color: #404bbf;
 }
 
 .address {
@@ -219,11 +223,38 @@ body {
     .address {
         display: none;
     }
+
+    .modal-header.is-open {
+        .address {
+            display: block;
+            margin-top: 168px;
+        }
+    }
 }
 
 .address-list {
     display: flex;
     gap: 40px;
+}
+
+.modal-header.is-open {
+    .address-list {
+        display: block;
+    }
+}
+
+.modal-header.is-open {
+    .address-item {
+        margin-bottom: 24px;
+    }
+
+    .address-link:hover {
+        color: #404bbf;
+    }
+
+    .address-link:focus {
+        color: #404bbf;
+    }
 }
 
 .address-link {
@@ -234,15 +265,6 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.address-link:hover {
-    color: #404bbf;
-}
-
-.address-link:focus {
-    color: #404bbf;
-}
-
 
 .header-button {
     visibility: hidden;
@@ -289,6 +311,7 @@ body {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* Prima sectiune */
 
