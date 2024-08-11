@@ -1231,6 +1231,7 @@ body {
 
 @media (max-width:320px) {
     .logo-footer {
+        
         margin-left: 102px;
         align-items: center;
         text-align: center;
