@@ -1,10 +1,10 @@
-const button1 = document.querySelector(".btn-modal");
+const button = document.querySelector(".btn-modal");
 
-const backdrop1 = document.querySelector(".modal-backdrop");
+const backdrop = document.querySelector(".modal-backdrop");
 
-button1.addEventListener("click", toggleModal1);
+button.addEventListener("click", toggleModal);
 
-backdrop1.addEventListener("click", (e) => {
+backdrop.addEventListener("click", (e) => {
 
   const target = e.target.closest(".btn-close-modal");
 
@@ -14,12 +14,12 @@ backdrop1.addEventListener("click", (e) => {
 
   }
 
-  toggleModal1();
+  toggleModal();
 
 });
 
-function toggleModal1() {
+function toggleModal() {
 
-  backdrop1.classList.toggle("is-open");
+  backdrop.classList.toggle("is-open");
 
 }
